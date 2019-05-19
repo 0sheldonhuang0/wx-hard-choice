@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index1/index1",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -12,11 +13,29 @@
     "pages/revision/revision"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "法语动词变位记忆小助手",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#F7F7FA",
+    "selectedColor": "#317ef3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "帮你选择",
+        "iconPath": "images/choice.png",
+        "selectedIconPath": "images/choice_selected.png"
+      },
+      {
+        "pagePath": "pages/cards/cards",
+        "text": "选择卡片",
+        "iconPath": "images/cards.png",
+        "selectedIconPath": "images/cards_selected.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

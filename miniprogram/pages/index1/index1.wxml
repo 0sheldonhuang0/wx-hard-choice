@@ -1,0 +1,26 @@
+<view class='bg-gradual-blue padding radius text-center shadow-blur title_css'>
+
+  <view class='flex-sub text-center'>
+    <view class="text-white">今天吃什么？
+      <view class='cu-tag bg-red light round sm shadow' bindtap="hint">更改选题</view>
+    </view>
+
+    <view class='grid col-1 padding-sm bg-answer-hc'>
+      <view class='padding-sm'>
+        <view class='bg-cyan light round padding radius text-center shadow-blur'>
+          <view class="text-sl">
+            <text class='icon-search'></text>
+          </view>
+          <view class="text-sm">7000动词查询</view>
+        </view>
+      </view>
+  </view>
+
+    <view class='box'>
+      <view class="cu-bar btn-group  bg-btn-conj">
+        <button class='cu-btn light bg-blue round shadow lg' bindtap="bien_enregistre">帮我选择👌</button>
+      </view>
+    </view>
+
+  </view>
+</view>
