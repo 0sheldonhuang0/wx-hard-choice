@@ -5,16 +5,13 @@
       <view class='cu-tag bg-red light round sm shadow' bindtap="hint">更改选题</view>
     </view>
 
-    <view class='grid col-1 padding-sm bg-answer-hc'>
-      <view class='padding-sm'>
-        <view class='bg-cyan light round padding radius text-center shadow-blur'>
-          <view class="text-sl">
-            <text class='icon-search'></text>
-          </view>
-          <view class="text-sm">7000动词查询</view>
-        </view>
+      <view class="padding bg-answer-hc">
+        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
+        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
+        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
+        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_100}}">进阶让他个热体100</view>
+        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
       </view>
-  </view>
 
     <view class='box'>
       <view class="cu-bar btn-group  bg-btn-conj">

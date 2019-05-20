@@ -8,3 +8,13 @@
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
+
+.cu-bar{
+border-top-left-radius:5vw;
+border-top-right-radius:5vw;
+}
+
+.bg-white{
+border-bottom-left-radius:5vw;
+border-bottom-right-radius:5vw;
+}

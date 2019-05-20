@@ -32,14 +32,20 @@
 
   <view class="cu-bar bg-blue light solid-bottom margin-top">
     <view class="flex padding justify-between">
-      <text class='text-center italic'>年会抽奖名单</text>
+      <text class='text-center italic'>年会抽奖名单我</text>
     </view>
 
     <view class="flex padding justify-between">
-      <button class='cu-btn bg-red round shadow sm' bindtap="revision_cards">编辑卡片</button>
+      <button class='cu-btn lines-blue round shadow sm' bindtap="choose_it">
+        <view class='icon-roundcheck text-blue'></view>
+      </button>
+      <text decode="{{true}}">&nbsp;</text>
+      <button class='cu-btn bg-red round shadow sm' bindtap="revision_cards">
+        <view class='icon-edit text-white'></view>
+      </button>
       <text decode="{{true}}">&nbsp;</text>
       <button class='cu-btn lines-red round shadow sm' bindtap="bien_enregistre">
-        <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
+        <view class='icon-delete text-red'></view>
       </button>
     </view>
   </view>

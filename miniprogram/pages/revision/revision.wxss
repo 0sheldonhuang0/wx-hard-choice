@@ -14,13 +14,13 @@
 }
 
 .cu-bar{
-border-top-left-radius:30px;
-border-top-right-radius:30px;
+border-top-left-radius:5vw;
+border-top-right-radius:5vw;
 }
 
 .bg-white{
-border-bottom-left-radius:30px;
-border-bottom-right-radius:30px;
+border-bottom-left-radius:5vw;
+border-bottom-right-radius:5vw;
 }
 
 

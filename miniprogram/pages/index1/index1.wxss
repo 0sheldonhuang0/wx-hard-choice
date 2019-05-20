@@ -19,13 +19,18 @@
 }
 
 .bg-btn-conj{
-  margin-top: 5vh;
+  margin-top: 15vh;
   margin-bottom: 30vh
 }
 
 .margin-text{
   margin-top: 7vh;
   margin-bottom: 20vh
+}
+
+.padding-tag-hc{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 
