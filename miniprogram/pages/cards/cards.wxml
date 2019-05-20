@@ -7,7 +7,7 @@
     </view>
 
     <view class="flex padding justify-between">
-      <button class='cu-btn bg-red round shadow sm' bindtap="bien_enregistre">编辑卡片</button>
+      <button class='cu-btn bg-red round shadow sm' bindtap="revision_cards">编辑卡片</button>
       <text decode="{{true}}">&nbsp;</text>
       <button class='cu-btn lines-red round shadow sm' bindtap="bien_enregistre">
         <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
@@ -16,7 +16,36 @@
   </view>
 
   <view class='padding bg-white'>
-    <view class="flex flex-wrap">
+
+
+
+
+    <view class="padding">
+      <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
+      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
+      <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
+      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_100}}">进阶让他个热体100</view>
+      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
+    </view>
+
+  </view>
+
+  <view class="cu-bar bg-blue light solid-bottom margin-top">
+    <view class="flex padding justify-between">
+      <text class='text-center italic'>年会抽奖名单</text>
+    </view>
+
+    <view class="flex padding justify-between">
+      <button class='cu-btn bg-red round shadow sm' bindtap="revision_cards">编辑卡片</button>
+      <text decode="{{true}}">&nbsp;</text>
+      <button class='cu-btn lines-red round shadow sm' bindtap="bien_enregistre">
+        <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
+      </button>
+    </view>
+  </view>
+
+  <view class='padding bg-white'>
+    <view class="padding">
       <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
       <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
       <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
@@ -27,35 +56,11 @@
 
   <view class="cu-bar bg-blue light solid-bottom margin-top">
     <view class="flex padding justify-between">
-      <text class='text-center italic'>年会抽奖名单</text>
-    </view>
-
-    <view class="flex padding justify-between">
-      <button class='cu-btn bg-red round shadow sm' bindtap="bien_enregistre">编辑卡片</button>
-      <text decode="{{true}}">&nbsp;</text>
-      <button class='cu-btn lines-red round shadow sm' bindtap="bien_enregistre">
-        <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
-      </button>
-    </view>
-  </view>
-
-  <view class='padding bg-white'>
-    <view class="flex flex-wrap">
-      <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
-      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
-      <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
-      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_100}}">进阶让他个热体100</view>
-      <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
-    </view>
-  </view>
-
-    <view class="cu-bar bg-blue light solid-bottom margin-top">
-    <view class="flex padding justify-between">
       <text class='text-center italic'>今天谁来买单？</text>
     </view>
 
     <view class="flex padding justify-between">
-      <button class='cu-btn bg-red round shadow sm' bindtap="bien_enregistre">编辑卡片</button>
+      <button class='cu-btn bg-red round shadow sm' bindtap="revision_cards">编辑卡片</button>
       <text decode="{{true}}">&nbsp;</text>
       <button class='cu-btn lines-red round shadow sm' bindtap="bien_enregistre">
         <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
@@ -64,7 +69,7 @@
   </view>
 
   <view class='padding bg-white'>
-    <view class="flex flex-wrap">
+    <view class="padding">
       <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
       <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
       <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
@@ -72,6 +77,6 @@
       <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
     </view>
   </view>
- 
+
 
 </view>

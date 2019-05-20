@@ -1,11 +1,6 @@
 const app = getApp();
 
 
-
-
-
-
-
 // pages/cards/cards.js
 Page({
 
@@ -22,6 +17,16 @@ Page({
   onLoad: function (options) {
 
   },
+
+  revision_cards: function(){
+    wx.navigateTo({
+      url: '../revision/revision',
+    })
+  },
+
+
+
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -71,4 +76,6 @@ Page({
   onShareAppMessage: function () {
 
   }
+
+
 })
