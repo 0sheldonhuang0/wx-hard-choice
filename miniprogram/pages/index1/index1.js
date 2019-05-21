@@ -1,66 +1,93 @@
-// pages/index1/index1.js
+const app = getApp()
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
+
   data: {
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  onLoad: function(options) {
+    app.globalData.newer = wx.getStorageSync('newer')
+    app.globalData.version = wx.getStorageSync('version')
+
+    if (app.globalData.newer == '' && app.globalData.version == '') { //如果没有任何数据，那就代表是新用户
+      wx.setStorageSync('newer', true)
+      wx.setStorageSync('version', "v1.0.0") //写入新版本的版本号
+      wx.setStorageSync('q_and_a', [{
+          "que": "今天谁买单？",
+          "ans": "男朋友,女朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友,男朋友"
+        },
+        {
+          "que": "今天吃什么？",
+          "ans": "汉堡王,麦当劳,肯德基,白饭,光面,泡饭,粥"
+        },
+        {
+          "que": "2020年年会中奖名单？",
+          "ans": "王汉堡,劳麦当,基肯德"
+        },
+      ]) //写下用户的第一个数据
+      wx.setStorageSync('choose_show', "0") //默认为第一条
+    }
+
+    if (app.globalData.version != "v1.0.0") { //如果只是新版本的数据没有
+      wx.setStorageSync('version', "v1.0.0") //写入新版本的版本号
+    }
+
+    app.globalData.q_and_a = wx.getStorageSync('q_and_a')
+    app.globalData.choose_show = wx.getStorageSync('choose_show')
+
+    var q_and_a = app.globalData.q_and_a;
+    var choose_show = app.globalData.choose_show;
+    var question = q_and_a[choose_show].que;
+    var answer = q_and_a[choose_show].ans;
+    var answer = answer.split(",")    //单个问题的所有答案数组
+
+
+
+
+
+    this.setData({
+      question: question,
+      answer:answer,
+    })
+  },
+
+
+  onReady: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+
+  onShow: function() {
+    if (getCurrentPages().length != 0) {
+      //刷新当前页面的数据
+      getCurrentPages()[getCurrentPages().length - 1].onLoad()
+    }
+  },
+
+
+  onHide: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+
+  onUnload: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+
+  onPullDownRefresh: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+
+  onReachBottom: function() {
 
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
 
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

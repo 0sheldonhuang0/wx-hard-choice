@@ -1,16 +1,12 @@
 <view class='bg-gradual-blue padding radius text-center shadow-blur title_css'>
 
   <view class='flex-sub text-center'>
-    <view class="text-white">今天吃什么？
+    <view class="text-white">{{question}}
       <view class='cu-tag bg-red light round sm shadow' bindtap="hint">更改选题</view>
     </view>
 
       <view class="padding bg-answer-hc">
-        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
-        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_100}}">进阶让他个热体100</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
+        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' wx:for="{{answer}}" wx:key>{{item}}</view>
       </view>
 
     <view class='box'>

@@ -1,79 +1,109 @@
 const app = getApp();
 
 
-// pages/cards/cards.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    ColorList: app.globalData.ColorList
+    ColorList: app.globalData.ColorList,
+    q_and_a: [],
+    question: [],
+    answer: [],
+    answer_array:[],
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+
+  onLoad: function(options) {
+    var q_and_a = app.globalData.q_and_a;
+    var question = [];
+    var answer = [];
+    var answer_array = [];
+    for (var i = 0; i < q_and_a.length; i++) {
+      var question_2 = q_and_a[i].que
+      var answer_2 = q_and_a[i].ans
+
+      var question = question.concat(question_2) //组成问题数组
+      var answer = answer.concat(answer_2) //组成答案数组
+    }
+
+    for (var i = 0; i < answer.length; i++) {
+      var answer_string = answer[i]
+      var answer_string = answer_string.split(",")    //单个问题的所有答案数组
+      answer_array[i] = answer_string     //answer_array是一个二维数组
+    }
+
+    console.log(answer_array)
+
+    this.setData({
+      question: question,
+      answer: answer,
+      q_and_a: q_and_a,
+      answer_array: answer_array,
+    })
 
   },
 
-  revision_cards: function(){
+  revision_card: function(e) {
+
     wx.navigateTo({
       url: '../revision/revision',
     })
   },
+  
+  delete_card: function(e){
+    var q_and_a = app.globalData.q_and_a;
+    q_and_a.splice(e.currentTarget.id,1);
+    console.log(q_and_a);
+    app.globalData.q_and_a = q_and_a;
+
+    wx.showToast({
+      title: '已删除',
+      image: '',
+      icon: 'sucess',
+      duration: 1000,
+      mask: true,
+    })
+
+    if (getCurrentPages().length != 0) {
+      //刷新当前页面的数据
+      getCurrentPages()[getCurrentPages().length - 1].onLoad()
+    }
+  },
+
+  choose_it: function (e) {
+    var choose_show = e.currentTarget.id;
+    app.globalData.choose_show = choose_show;
+    wx.setStorageSync('choose_show', choose_show)
+  },
 
 
 
-
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+  onReady: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+
+  onShow: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+
+  onHide: function() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 
