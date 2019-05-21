@@ -4,7 +4,8 @@ Page({
 
 
   data: {
-
+    answer: [],
+    final_decision: "帮你选择",
   },
 
   onLoad: function(options) {
@@ -41,18 +42,35 @@ Page({
     var choose_show = app.globalData.choose_show;
     var question = q_and_a[choose_show].que;
     var answer = q_and_a[choose_show].ans;
-    var answer = answer.split(",")    //单个问题的所有答案数组
-
-
-
-
+    var answer = answer.split(",") //单个问题的所有答案数组
 
     this.setData({
       question: question,
-      answer:answer,
+      answer: answer,
     })
   },
 
+  help_me_choose: function() {
+    console.log(this.data.answer)
+    var answer = this.data.answer;
+    var answer_length = answer.length;
+
+    function GetRandomNum(Min, Max) {
+      var Range = Max - Min;
+      var Rand = Math.random();
+      return (Min + Math.round(Rand * Range));
+    }
+
+    var num = GetRandomNum(0, answer_length - 1);
+    console.log(answer_length)
+    var final_decision = answer[num];
+    console.log(answer[num])
+
+    this.setData({
+      final_decision: final_decision,
+    })
+
+  },
 
   onReady: function() {
 

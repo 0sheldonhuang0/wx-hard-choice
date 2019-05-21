@@ -5,13 +5,15 @@
       <view class='cu-tag bg-red light round sm shadow' bindtap="hint">更改选题</view>
     </view>
 
-      <view class="padding bg-answer-hc">
-        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' wx:for="{{answer}}" wx:key>{{item}}</view>
-      </view>
+    <view class="padding bg-answer-hc">
+      <view class='cu-tag bg-green light round sm shadow padding-tag-hc' wx:for="{{answer}}" wx:key>{{item}}</view>
+    </view>
+
+    <view class="text-white">{{final_decision}}</view>
 
     <view class='box'>
       <view class="cu-bar btn-group  bg-btn-conj">
-        <button class='cu-btn light bg-blue round shadow lg' bindtap="bien_enregistre">帮我选择👌</button>
+        <button class='cu-btn light bg-blue round shadow lg' bindtap="help_me_choose">帮我选择👌</button>
       </view>
     </view>
 
