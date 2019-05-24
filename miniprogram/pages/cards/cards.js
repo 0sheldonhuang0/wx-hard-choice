@@ -67,6 +67,20 @@ Page({
   },
 
   revision_card: function(e) {
+    var q_and_a = app.globalData.q_and_a;
+    console.log("revision_card")
+    console.log(e.currentTarget.id)
+    console.log(q_and_a[e.currentTarget.id].ans)
+
+    //这是问题
+    app.globalData.question = q_and_a[e.currentTarget.id].que
+
+    //这是答案
+    var answer_string = q_and_a[e.currentTarget.id].ans
+    var answer_string = answer_string.split(",") //单个问题的所有答案数组
+    console.log(answer_string)
+    app.globalData.answer = answer_string;
+
     wx.navigateTo({
       url: '../revision/revision',
     })
@@ -121,12 +135,9 @@ Page({
     })
   },
 
-
-
   onReady: function() {
 
   },
-
 
   onShow: function() {
 

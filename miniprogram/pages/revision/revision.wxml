@@ -4,34 +4,29 @@
   <view class="cu-bar bg-blue light">
     <view class="padding">
       <view class="cu-form-group round">
-        <view class="title">艰难的选择</view>
-        <input placeholder="在这里填写您得选题在这里填写您得选题"></input>
-        <text class="icon-roundcheckfill text-red"></text>
+        <view class="title">选题</view>
+        <input placeholder="{{question}}" bindinput="question" value=""></input>
+        <text class="icon-roundcheckfill text-green" hidden='{{fill_or_not}}'></text>
       </view>
     </view>
   </view>
 
   <view class='padding bg-white'>
       <view class="padding">
-        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_classic}}">典型动如果让他个热体词</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_selected}}">典型精v吴绿绿人选</view>
-        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' hidden="{{tag_50}}">基础他特50</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_100}}">进阶让他个热体100</view>
-        <view class='cu-tag bg-cyan light round sm shadow padding-tag-hc' hidden="{{tag_230}}">高手天热让他Bert230</view>
+        <view class="cu-tag bg-green {{light_or_not[j]}} round sm shadow padding-tag-hc" wx:for="{{answer}}" wx:for-item="i" wx:for-index="j" wx:key bindtap="choose_tag" id='{{j}}'>{{answer[j]}}</view>
       </view>
-
 
       <view class="padding">
         <view class="cu-form-group-hc padding round border-hc">
           <view class="title">选项</view>
-          <input placeholder="写选项"></input>
-          <text class="icon-roundcheckfill text-red"></text>
+          <input placeholder="写选项" bindinput="answer" value=""></input>
+          <text class="icon-roundcheckfill text-green " hidden='{{answer_fill_or_not}}'></text>
         </view>
         <view class="flex padding justify-center">
           <button class='cu-btn bg-red round shadow' bindtap="revision_cards">添加</button>
           <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
-          <button class='cu-btn lines-red round shadow' bindtap="bien_enregistre">
-            <view class='icon-delete text-red' bindtap='like_save' id='{{carte_number}}'></view>
+          <button class='cu-btn lines-red round shadow' bindtap="delete_tags">
+            <view class='icon-delete text-red'></view>
           </button>
         </view>
       </view>
