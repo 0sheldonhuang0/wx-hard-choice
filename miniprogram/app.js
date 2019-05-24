@@ -15,6 +15,10 @@ App({
       version: null,
       q_and_a: [],
       choose_show: null,
+
+
+      question:[],
+      answer: [],
     }
   }
 })
