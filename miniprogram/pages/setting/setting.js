@@ -131,7 +131,7 @@ this.onQuery();
   copy: function () {
     var self = this;
     wx.setClipboardData({
-      data: "https://hxd.red/hard-choice",
+      data: "https://uniquelab.cn/hard-choice",
       success: function (res) {
         wx.showModal({
           title: '提示',

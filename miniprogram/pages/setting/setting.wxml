@@ -50,13 +50,13 @@
   </view>
   <view class='padding bg-white bg-white-last'>
     <view class='text-sm'>艰难的决定</view>
-    <view class='text-sm'>v1.0.1 (2019.6.10)</view>
+    <view class='text-sm'>v1.0.2 (2019.6.24)</view>
     <view class='text-sm'>by bu要搞事情</view>
-    <view class='text-sm'>个人主页：https://hxd.red</view>
+    <view class='text-sm'>个人主页：https://uniquelab.cn</view>
     <view class="text-sm">2019.5</view>
     <view class="text-sm">Fait à Saint Nazaire, France</view>
     <view class="text-sm">使用了ColorUI</view>
-    <view class="text-sm">https://hxd.red/hard-choice</view>
+    <view class="text-sm">https://uniquelab.cn/hard-choice</view>
     <view class='box'>
       <view class="cu-bar btn-group">
         <button class='cu-btn bg-red round shadow' bindtap="copy">点击复制网址</button>

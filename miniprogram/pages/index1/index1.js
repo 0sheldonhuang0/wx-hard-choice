@@ -15,7 +15,7 @@ Page({
 
     if (app.globalData.newer == '' && app.globalData.version == '') { //如果没有任何数据，那就代表是新用户
       wx.setStorageSync('newer', true)
-      wx.setStorageSync('version', "v1.0.0") //写入新版本的版本号
+      wx.setStorageSync('version', "v1.0.2") //写入新版本的版本号
       wx.setStorageSync("hidden_or_not", false)
       wx.setStorageSync('q_and_a', [{
           "que": "这个小程序能干什么？",
@@ -37,8 +37,8 @@ Page({
       wx.setStorageSync('choose_show', "0") //默认为第一条
     }
 
-    if (app.globalData.version != "v1.0.1") { //如果只是新版本的数据没有
-      wx.setStorageSync('version', "v1.0.1") //写入新版本的版本号
+    if (app.globalData.version != "v1.0.2") { //如果只是新版本的数据没有
+      wx.setStorageSync('version', "v1.0.2") //写入新版本的版本号
     }
 
     app.globalData.q_and_a = wx.getStorageSync('q_and_a')
