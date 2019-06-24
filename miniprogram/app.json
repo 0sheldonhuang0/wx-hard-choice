@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index1/index1",
+    "pages/cards/cards",
+    "pages/revision/revision",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "法语动词变位记忆小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#F7F7FA",
+    "selectedColor": "#317ef3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "帮你选择",
+        "iconPath": "images/choice.png",
+        "selectedIconPath": "images/choice_selected.png"
+      },
+      {
+        "pagePath": "pages/cards/cards",
+        "text": "选择卡片",
+        "iconPath": "images/cards.png",
+        "selectedIconPath": "images/cards_selected.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "个性化",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wx168d50e200bd0513"
+  ]
+}

@@ -1,0 +1,43 @@
+.text-sm{
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh
+}
+
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+
+.page__title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+  position: center
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.title_css{
+  padding-top: 10vh;
+  padding-bottom: 10vh
+}

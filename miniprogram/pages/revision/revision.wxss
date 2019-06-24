@@ -1,0 +1,50 @@
+.title_css{
+  padding-top: 20vh;
+  padding-bottom:80vh
+}
+
+.cu-form-group{
+    margin-right: 2vh;
+
+}
+
+.padding-tag-hc{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.cu-form-group{
+ border-color: blue; 
+  border-width: 2px; 
+  margin-left:     auto;
+  margin-right:     auto;
+}
+
+.padding{
+  border-color: red;
+  border-width: 2px;
+  margin:    auto;
+}
+
+.border-hc{
+  border-color: #cce8fe;
+  border-width: 1px;
+  border-style: solid ;
+  margin:    auto;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.cu-form-group-hc {
+	background-color: var(--white);
+	padding: 1rpx 30rpx;
+	display: flex;
+	align-items: center;
+	min-height: 80rpx;
+	justify-content: space-between;
+}
+
+.bg-blue{
+border-top-left-radius:4vw;
+border-top-right-radius:4vw;
+}

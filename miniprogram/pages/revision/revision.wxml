@@ -1,0 +1,36 @@
+<view class="bg-gradual-blue padding radius text-center shadow-blur title_css">
+
+
+  <view class="bg-blue light">
+    <view class="padding">
+      <view class="cu-form-group-hc padding round border-hc">
+        <view class="title">选题</view>
+        <input placeholder="{{question}}" bindinput="question" value=""></input>
+        <text class="icon-roundcheckfill text-green" hidden='{{fill_or_not}}'></text>
+      </view>
+    </view>
+  </view>
+
+  <view class='padding bg-white bg-white-last'>
+      <view class="padding">
+        <view class="cu-tag bg-green {{light_or_not[j]}} round sm shadow padding-tag-hc" wx:for="{{answer}}" wx:for-item="i" wx:for-index="j" wx:key bindtap="choose_tag" id='{{j}}'>{{answer[j]}}</view>
+      </view>
+
+      <view class="padding">
+        <view class="cu-form-group-hc padding round border-hc">
+          <view class="title">选项</view>
+          <input placeholder="添加选项" bindinput="answer" value=""></input>
+          <text class="icon-roundcheckfill text-green " hidden='{{answer_fill_or_not}}'></text>
+        </view>
+        <view class="flex padding justify-center">
+          <button class='cu-btn bg-red round shadow' bindtap="add_tags">添加</button>
+          <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+          <button class='cu-btn lines-red round shadow' bindtap="delete_tags">
+            <view class='icon-delete text-red'></view>
+          </button>
+        </view>
+      </view>
+
+
+    </view>
+  </view>

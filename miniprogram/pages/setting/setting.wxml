@@ -1,0 +1,69 @@
+<view class='bg-gradual-blue padding radius text-center shadow-blur title_css'>
+
+
+  <view class="cu-bar bg-grey light solid-bottom margin-top">
+    <view class='action'>
+      <text class='icon-title text-grey'></text>同步设置
+    </view>
+  </view>
+  <view class='padding bg-white bg-white-last center'>
+    <!-- 用户 openid -->
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar center" style="background-image: url({{avatarUrl}})" bindtap="onGetOpenid"></button>
+    <view class='text-left text-xs text-grey padding'>点击上方登陆，登陆之后您的所有设置和卡片将会和云端同步。</view>
+  </view>
+
+  <view class="cu-bar bg-blue light solid-bottom margin-top">
+    <view class='action'>
+      <text class='icon-title text-blue'></text>小程序推荐
+    </view>
+  </view>
+  <view class='padding bg-white bg-white-last'>
+    <view class='text-sm'>👇试试我的其他小程序👇</view>
+    <view class='box'>
+      <view class="cu-bar btn-group">
+        <button class='cu-btn bg-blue round shadow' bindtap="conj_helper">法语动词变位</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-mauve light solid-bottom margin-top">
+    <view class='action'>
+      <text class='icon-title text-mauve'></text>报错和建议
+    </view>
+  </view>
+  <view class='padding bg-white bg-white-last'>
+    <view class='text-sm'>如果您觉得本小程序有用的话</view>
+    <view class='text-sm'>点击右上角☝的三个点➡转发</view>
+    <view class='text-sm'>分享给小伙伴哟</view>
+    <view class='text-sm'>或者添加到“我的小程序”</view>
+    <view class='box'>
+      <view class="cu-bar btn-group">
+        <button class='cu-btn lines-mauve round shadow' open-type="feedback">❌报错和建议</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-red light solid-bottom margin-top">
+    <view class='action'>
+      <text class='icon-title text-red'></text>关于艰难的决定
+    </view>
+  </view>
+  <view class='padding bg-white bg-white-last'>
+    <view class='text-sm'>艰难的决定</view>
+    <view class='text-sm'>v1.0.1 (2019.6.10)</view>
+    <view class='text-sm'>by bu要搞事情</view>
+    <view class='text-sm'>个人主页：https://hxd.red</view>
+    <view class="text-sm">2019.5</view>
+    <view class="text-sm">Fait à Saint Nazaire, France</view>
+    <view class="text-sm">使用了ColorUI</view>
+    <view class="text-sm">https://hxd.red/hard-choice</view>
+    <view class='box'>
+      <view class="cu-bar btn-group">
+        <button class='cu-btn bg-red round shadow' bindtap="copy">点击复制网址</button>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

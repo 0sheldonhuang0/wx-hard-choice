@@ -1,0 +1,62 @@
+<view class="bg-gradual-blue padding radius text-center shadow-blur title_css">
+
+  <view class='box'>
+    <view class="cu-bar btn-group">
+      <button class='cu-btn bg-blue light round shadow lg' bindtap="new_card">🎫 新建卡片</button>
+    </view>
+  </view>
+
+  <view class="cu-bar bg-red light solid-bottom margin-top" hidden ="{{hidden_or_not}}">
+    <view class="flex padding justify-between">
+      <text class='text-center italic'>使用帮助</text>
+    </view>
+    <view class="flex padding justify-between">
+      <button class="cu-btn lines-red round shadow sm" bindtap="close_it">
+        <view class="icon-close text-red"></view>
+      </button>
+    </view>
+  </view>
+  <view class='padding bg-white bg-white-last' hidden ="{{hidden_or_not}}">
+    <view class='text-sm'>点击上方“新建卡片”按钮能够新建选题和选项</view>
+    <view class='text-sm'>点击每张卡片的右上角可以进行“选择”、“修改”、“删除”操作</view>
+  </view>
+
+
+
+
+  <!-- answer_array是一个二维数组，j是序号，i是一维数组、是答案。 -->
+  <view class="box" wx:for="{{answer_array}}" wx:for-item="i" wx:for-index="j" wx:key>
+    <view class="cu-bar bg-blue light solid-bottom margin-top ">
+      <view class="flex padding justify-between">
+        <!-- question是问题数组，j只是一个序号。-->
+        <text class='text-center italic'>{{question[j]}}</text>
+      </view>
+      <view class="flex padding justify-between">
+        <!-- 给每一个button加上id，这样就可以知道按的是哪个了-->
+        <button class="cu-btn {{change_choose_color[j]}} round shadow sm" bindtap="choose_it" id="{{j}}">
+          <view class="icon-roundcheck {{change_choose_icon_color[j]}}"></view>
+        </button>
+        <text decode="{{true}}">&nbsp;</text>
+        <button class="cu-btn bg-red round shadow sm" bindtap="revision_card" id="{{j}}">
+          <view class="icon-edit text-white"></view>
+        </button>
+        <text decode="{{true}}">&nbsp;</text>
+        <button class="cu-btn {{change_delete_color}} round shadow sm" bindtap="delete_card" id="{{j}}">
+          <view class="icon-delete {{change_delete_icon_color}}"></view>
+        </button>
+      </view>
+    </view>
+
+    <!-- 下面的是白色面板，wx:for为上方的一维数组，item是一维数组里面的元素 -->
+    <view class='padding bg-white bg-white-last' bindtap="does_not_work">
+      <view class="padding">
+        <view class='cu-tag bg-green light round sm shadow padding-tag-hc' wx:for="{{i}}" wx:key>{{item}}</view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+
+</view>

@@ -1,0 +1,68 @@
+@import 'colorui/icon.wxss';
+@import 'colorui/main.wxss';
+
+page {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.page__hd {
+  padding: 25px;
+}
+
+.page__bd {
+  padding-bottom: 40px;
+}
+
+.page__bd_spacing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page__ft {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.page__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.page__desc {
+  margin-top: 5px;
+  color: #888;
+  text-align: center;
+  font-size: 15px;
+}
+
+.page__exp {
+  margin-top: 5px;
+  color: #888;
+  font-style: oblique;
+  text-align: center;
+  font-size: 15px;
+}
+
+.dash-conj{
+  border-style:dashed none none none;
+  border-color:aqua;
+}
+
+.italic{
+  font-style:italic;
+  padding-bottom: 1px;
+}
+
+.cu-bar{
+border-top-left-radius:4vw;
+border-top-right-radius:4vw;
+}
+
+.bg-white-last{
+border-bottom-left-radius:4vw;
+border-bottom-right-radius:4vw;
+}
+
