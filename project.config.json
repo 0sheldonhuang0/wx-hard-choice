@@ -6,7 +6,9 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true
 	},
 	"appid": "wx4b37e8a18be82a4d",
 	"projectname": "hardchoice",
