@@ -1,5 +1,3 @@
-- [小程序首页](https://uniquelab.cn/hard-choice/)
-
 ## 简介
 这个小程序主要是帮助选择困难症患者的，当然包括我自己。虽然市面上这样的小程序有很多，但是自己做一个还是觉得挺有成就感的，虽然并不知道之后会去用多少次。“选择”是一大世界性难题。吾日三问吾身：今天吃什么？我要选择哪一个呢？现在做些什么事情比较好呢？
 
@@ -10,5 +8,5 @@
 增加了设置和卡片的云同步
 
 ## 界面
-![界面预览1](https://uniquelab.cn/wp-content/uploads/2019/06/2019-06-01-21_57_26-%E8%89%B0%E9%9A%BE%E7%9A%84%E5%86%B3%E5%AE%9A-%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E7%95%8C%E9%9D%A2-20190522-%E9%BB%84%E6%99%93%E6%A0%8B.pptx-PowerPoint.jpg"界面预览")
-![界面预览2](https://uniquelab.cn/wp-content/uploads/2019/06/2019-06-01-21_57_40-%E8%89%B0%E9%9A%BE%E7%9A%84%E5%86%B3%E5%AE%9A-%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E7%95%8C%E9%9D%A2-20190522-%E9%BB%84%E6%99%93%E6%A0%8B.pptx-PowerPoint.jpg"界面预览")
+- [艰难的选择：小程序首页](https://uniquelab.cn/hard-choice/)
+- [网站首页](https://uniquelab.cn/hard-choice/)
