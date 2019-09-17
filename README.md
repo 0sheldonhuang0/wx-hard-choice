@@ -8,5 +8,5 @@
 增加了设置和卡片的云同步
 
 ## 界面
-- [艰难的选择：小程序首页](https://uniquelab.cn/hard-choice/)
-- [网站首页](https://uniquelab.cn/hard-choice/)
+- [艰难的选择：小程序首页](https://hxd.red/hard-choice/)
+- [网站首页](https://hxd.red/hard-choice/)
